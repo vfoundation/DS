@@ -1,0 +1,853 @@
+{
+    "title": "Zoom Meeting Settings",
+    "__version": "1.0",
+    "__preferencedomain": "us.zoom.config",
+    "links": [
+        {
+            "rel": "Documentation Link",
+            "href": "https://support.zoom.us/hc/en-us/articles/115001799006"
+        }
+    ],
+    "options": {
+        "remove_empty_properties": true
+    },
+    "properties": {
+        "UsePMI": {
+            "title": "Always use PMI for Instant Meetings",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZDisableVideo": {
+            "title": "Disable Camera by Default",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "zDisableSendVideo": {
+            "title": "Disable Sending Video",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "zDisableRecvVideo": {
+            "title": "Disable Receiving Video",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableComputerAudio": {
+            "title": "Disable Computer Audio",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MuteWhenLockScreen": {
+            "title": "Mute when Screen is Locked",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableOriginalSound": {
+            "title": "Enable Original Sound for Audio",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZAutoJoinVoip": {
+            "title": "Automatically Join VoIP",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AudioAutoAdjust": {
+            "title": "Automatically Adjust Microphone Levels",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableEchoCancellation": {
+            "title": "Enable Echo Cancellation for Microphone Audio",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SetUseSystemDefaultSpeakerForVOIP": {
+            "title": "Use System Default Speaker when Using Computer Audio",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SetUseSystemDefaultMicForVOIP": {
+            "title": "Use System Default Speaker when Using Microphone Audio",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZDualMonitorOn": {
+            "title": "Automatically Enable Dual Monitor",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZAutoFullScreenWhenViewShare": {
+            "title": "Automatically Enter Full Screen when Sharing Content",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZAutoFitWhenViewShare": {
+            "title": "Auto Fit to Window when Sharing Content",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "zDisableAnnotation": {
+            "title": "Disable Annotation When Screen Sharing or Viewing a Screen Share",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableDoNotDisturbInSharing": {
+            "title": "Enable Do Not Disturb when Sharing",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableWhiteboard": {
+            "title": "Disable White Board",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableShareVideo": {
+            "title": "Allow Sharing of Video Clips",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/202954249"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableShareAudio": {
+            "title": "Allow Sharing of Audio Only when Screen Sharing",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "FullScreenWhenJoin": {
+            "title": "Default to Full Screen when Starting or Joining a Meeting",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AutoHideToolbar": {
+            "title": "Always Show Meeting Controls",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZUse720PByDefault": {
+            "title": "Enable HD Video by Default",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZRemoteControllAllApp": {
+            "title": "Remote Control all Applications",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZHideNoVideoUser": {
+            "title": "Hide non Video Participants by Default",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MuteVoipWhenJoin": {
+            "title": "Always Mute Microphone when Joining a Meeting",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ShowConnectedTime": {
+            "title": "Show Time Connected in Meeting",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ConfirmWhenLeave": {
+            "title": "Confirm Before Leaving Meeting",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableScreenShare": {
+            "title": "Disable Screen Sharing when Starting or Joining a Meeting",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "zDisableFT": {
+            "title": "Disable In-Meeting File Transfers",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableMeeting3rdPartyFileStorage": {
+            "title": "Disable In-Meeting Third Party File Transfers",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableRemoteControl": {
+            "title": "Disable Remote Control When Screen Sharing",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/201362673"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableRemoteSupport": {
+            "title": "Disable 1-1 Remote Support when Screen Sharing",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/208072316"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableClosedCaptioning": {
+            "title": "Disable Closed Captioning",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/4403492514829"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableQnA": {
+            "title": "Disable Q&A",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/203686015"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableSlideControl": {
+            "title": "Disable Slide Control",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/4411656450701"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableMirrorEffect": {
+            "title": "Enable Mirroring of Shared Video",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableSplitScreen": {
+            "title": "Enable Side by Side Mode by Default",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "zDisableLocalRecord": {
+            "title": "Disable Local Recording",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/201362473"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "zDisableCMR": {
+            "title": "Disable Cloud Recording",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/203741855"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableVirtualBkgnd": {
+            "title": "Disable Virtual Backgrounds",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/210707503"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableVideoFilters": {
+            "title": "Disable Video Filters",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "links": [
+                        {
+                            "rel": "Documentation Link",
+                            "href": "https://support.zoom.us/hc/en-us/articles/115002595343#h_01EEEKW5C9492RGWQ6KN55WQJ7"
+                        }
+                    ],
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SetScreenCaptureMode": {
+            "title": "Screen Capture Mode",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "enum_titles": [
+                            "Auto",
+                            "Legacy OS",
+                            "Share with Window Filtering",
+                            "Advanced Share with Window Filtering",
+                            "Advanced Share without Window Filtering"
+                        ]
+                    },
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                }
+            ]
+        },
+        "EnableIndependentDataPort": {
+            "title": "Split Traffic Across Different Ports",
+            "description": "(EnableIndependentDataPort)-If enabled, Video will use port 8801, Screensharing 8802, and Audio 8803",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableSSLVerification": {
+            "title": "Enable SSL Verification",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableRemindMeetingTime": {
+            "title": "Enable Upcoming Meeting Reminders",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Enable49Video": {
+            "title": "Enable Gallery View",
+            "description": "(Enable49Video)-Enables up to 49 Participants per screen",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableSpotlightSelf": {
+            "title": "Enable Spotlight for Video when Participant Speaks",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "BandwidthLimitUp": {
+            "title": "Limit Maximum Upstream Bandwidth",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "5000"
+                        }
+                    }
+                }
+            ]
+        },
+        "BandwidthLimitDown": {
+            "title": "Limit Maximum Downstream Bandwidth",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "5000"
+                        }
+                    }
+                }
+            ]
+        },
+        "RecordPath": {
+            "title": "Local Path to Meeting Recordings",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "/Users/Shared/"
+                        }
+                    }
+                }
+            ]
+        },
+        "ProxyBypass": {
+            "title": "Set Proxy Bypass Rule",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ProxyServer": {
+            "title": "Proxy Server",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ProxyPAC": {
+            "title": "Proxy Server PAC URL",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "SetSuppressBackgroundNoiseLevel": {
+            "title": "Set Noise Suppression Level",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "enum_titles": [
+                            "Auto",
+                            "Low",
+                            "Medium",
+                            "High"
+                        ]
+                    },
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                }
+            ]
+        }
+    }
+}

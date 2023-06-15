@@ -1,0 +1,566 @@
+{
+    "title": "Zoom General Settings",
+    "__version": "1.0",
+    "__preferencedomain": "us.zoom.config",
+    "links": [
+        {
+            "rel": "Documentation Link",
+            "href": "https://support.zoom.us/hc/en-us/articles/115001799006"
+        }
+    ],
+    "options": {
+        "remove_empty_properties": true
+    },
+    "properties": {
+        "ZAutoSSOLogin": {
+            "title": "Default to Login with SSO",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "zSSOHost": {
+            "title": "Preconfigured SSO URL",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "company.zoom.us"
+                        }
+                    }
+                }
+            ]
+        },
+        "ForceSSOURL": {
+            "title": "Lock SSO URL",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableAutoLaunchSSO": {
+            "title": "Do not launch previously used SSO URL",
+            "description": "(DisableAutoLaunchSSO)-Prevent Zoom from automatically launching the previously used SSO URL. This is useful for users with multiple accounts, each having their own SSO URL",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "NoGoogle": {
+            "title": "Disable Sign in with Google",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "NoFacebook": {
+            "title": "Disable Sign in with Facebook",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableLoginWithEmail": {
+            "title": "Disable Sign in with Email Address",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "NoSSO": {
+            "title": "Disable SSO Login",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableKeepSignedInWithSSO": {
+            "title": "Require SSO Sign in on Application Launch",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableKeepSignedInWithGoogle": {
+            "title": "Require Google Sign in on Application Launch",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableKeepSignedInWithFacebook": {
+            "title": "Require Facebook Sign in on Application Launch",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableEmbedBrowserForSSO": {
+            "title": "Launch SSO Login in App",
+            "description": "(enableembedbrowserforsso)-Launches the SSO Sign in in App rather than the user's default browser",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnforceSignInToJoin": {
+            "title": "Force Sign-in to Join Meeting",
+            "description": "(EnforceSignInToJoin)-Forces users to be signed in before joining a meeting from the app. Users can be signed-in on the web portal when joining through join URL",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnforceAppSignInToJoin": {
+            "title": "Force App Sign-in to Join Meeting",
+            "description": "(EnforceAppSignInToJoin)-Require the client to be logged-in to a Zoom account before joining any meeting or webinar",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SetWebDomain": {
+            "title": "Sign in Web Domain",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "https://zoom.us"
+                        }
+                    }
+                }
+            ]
+        },
+        "LastLoginType": {
+            "title": "Remember the last Login Type Used",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "KeepSignedIn": {
+            "title": "Automatically Login to Last Account Used (email only)",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ZAutoUpdate": {
+            "title": "Allow User Initiated Updates",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableSilentAutoUpdate": {
+            "title": "Enable Silent Updates",
+            "description": "(EnableSilentAutoUpdate)-Allows the desktop client to silently check for available stable-version updates. This option requires AutoUpdate option to be enabled, and will fail if not enabled",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AlwaysCheckLatestVersion": {
+            "title": "Always Check for Available Updates on Launch",
+            "description": "(AlwaysCheckLatestVersion)-Allows the desktop client to check for any available updates. This option requires AutoUpdate option to be enabled, and will fail if not enabled",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "disableDaemonInstall": {
+            "title": "Disable Auto Update Daemon",
+            "description": "(disableDaemonInstall)-Controls the use of the daemon helper to install updates, which bypasses the need to enter admin credentials when upgrading. This option requires AutoUpdate option to be enabled, and will fail if not enabled",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Login_Domain": {
+            "title": "Login Domain for Email Addresses",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "company.com"
+                        }
+                    }
+                }
+            ]
+        },
+        "DefaultUsePortraitView": {
+            "title": "Default to Portrait Mode",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableDirectShare": {
+            "title": "Disable Direct Share",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PresentToRoomWithAudio": {
+            "title": "Allow Audio when Presenting to a Zoom Room",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableHIDControl": {
+            "title": "Enable HID Control of USB Audio Devices",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableStartMeetingWithRoomSystem": {
+            "title": "Display Call Room System Button on Zoom Home Screen",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PresentToRoomOptimizeVideo": {
+            "title": "Optimize Screen Sharing for Zoom Room Sharing",
+            "description": "(PresentToRoomOptimizeVideo)-Client will optimize screen sharing for video clip when sharing directly to a Zoom Room",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PresentToRoomOption": {
+            "title": "Set Sharing Option when Sharing Directly to Zoom Room",
+            "description": "(PresentToRoomOption)-False shows all sharing options, True automatically shares the entire desktop",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PresentInMeetingOption": {
+            "title": "Set Sharing Option when Sharing Directory to Zoom Room Within a Meeting",
+            "description": "(PresentInMeetingOption)-False shows all sharing options, True automatically shares the entire desktop",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Account": {
+            "title": "Restricted Account ID",
+            "description": "(Account)-Account ID that the client is restricted to join meetings hosted by specific accounts",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://support.zoom.us/hc/en-us/articles/115001799006#note"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "1234567"
+                        }
+                    }
+                }
+            ]
+        },
+        "SetDevicePolicyToken": {
+            "title": "Internal Meeting Authentication Token",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://support.zoom.us/hc/en-us/articles/115001799006#note"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "Token"
+                        }
+                    }
+                }
+            ]
+        },
+        "AlwaysShowVideoPreviewDialog": {
+            "title": "Show Video Previews when Joining a Meeting",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LegacyCaptureMode": {
+            "title": "Disable GPU Acceleration",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "BlockUntrustedSSLCert": {
+            "title": "Block Untrusted SSL Connections",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EmbedUserAgentString": {
+            "title": "Embedded User Agent String",
+            "description": "(embeduseragentstring)-Allows embedding text in the Zoom using a user agent string",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string",
+                    "options": {
+                        "inputAttributes": {
+                            "placeholder": "User Agent String"
+                        }
+                    }
+                }
+            ]
+        },
+        "IgnoreBandwidthLimits": {
+            "title": "Ignore Bandwidth Limits",
+            "description": "(IgnoreBandwidthLimits)-Ignore bandwidth limited set on web settings. Useful for exceptions",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableZoomApps": {
+            "title": "Disable Zoom App Quick Launch",
+            "description": "(DisableZoomApps)-Hide Zoom Apps quick launch button in the Zoom interface",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+    }
+}

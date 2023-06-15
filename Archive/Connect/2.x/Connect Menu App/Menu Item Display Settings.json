@@ -1,0 +1,57 @@
+{
+    "title": "Menu Item Display Settings",
+    "__preferencedomain": "com.jamf.connect",
+    "properties": {
+        "HiddenMenuItems": {
+            "title": "Hidden Menu Items",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Hidden Menu Item",
+                        "options": {
+                            "enum_titles": [
+                                "About Menu",
+                                "Actions Menu",
+                                "Change Password Menu",
+                                "Get Help Menu",
+                                "Get Software Menu",
+                                "Network Home Directory Menu",
+                                "Kerberos Ticket Menu",
+                                "Last User Menu",
+                                "Password Expiration Menu",
+                                "Preferences Menu",
+                                "Reset Password Menu",
+                                "Shares Menu",
+                                "Connect Menu",
+                                "Quit Menu"
+                            ]
+                        },
+                        "enum": [
+                            "about",
+                            "actions",
+                            "changepassword",
+                            "gethelp",
+                            "getsoftware",
+                            "home",
+                            "tickets",
+                            "lastuser",
+                            "passwordexpiration",
+                            "preferences",
+                            "resetpassword",
+                            "shares",
+                            "connect",
+                            "quitjamfconnect"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

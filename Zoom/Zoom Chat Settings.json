@@ -1,0 +1,85 @@
+{
+    "title": "Zoom Chat Settings",
+    "__version": "1.0",
+    "__preferencedomain": "us.zoom.config",
+    "links": [
+        {
+            "rel": "Documentation Link",
+            "href": "https://support.zoom.us/hc/en-us/articles/115001799006"
+        }
+    ],
+    "options": {
+        "remove_empty_properties": true
+    },
+    "properties": {
+        "zDisableChat": {
+            "title": "Disable Group Chat",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableLinkPreviewInChat": {
+            "title": "Disable Link Preview in Chat",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PlaySoundForIMMessage": {
+          "title": "Play Sound for IM Messsages",
+          "anyOf": [
+            {"type": "null", "title": "Not Configured"},
+            {
+              "title": "Configured",
+              "type": "boolean"
+            }
+          ]
+        },
+        "ShowIMMessagePreview": {
+          "title": "Show IM Message Preview",
+          "anyOf": [
+            {"type": "null", "title": "Not Configured"},
+            {
+              "title": "Configured",
+              "type": "boolean"
+            }
+          ]
+        },
+        "MuteIMNotificationWhenInMeeting": {
+          "title": "Mute IM Notifications when In Meeting",
+          "anyOf": [
+            {"type": "null", "title": "Not Configured"},
+            {
+              "title": "Configured",
+              "type": "boolean"
+            }
+          ]
+        },
+        "ShowVoiceMessageButton": {
+            "title": "Disable Sending Voice Messages",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+    }
+}

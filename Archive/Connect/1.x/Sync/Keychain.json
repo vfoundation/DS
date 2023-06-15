@@ -1,0 +1,46 @@
+{
+    "title": "com.jamf.connect.sync",
+    "description": "Jamf Connect Sync Keychain Preferences",
+    "__preferencedomain": "com.jamf.connect.sync",
+    "properties": {
+        "UseKeychain": {
+            "title": "Use Keychain",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UseKeychainPrompt": {
+            "title": "Use Keychain Prompt",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "KeychainItemsDebug": {
+            "title": "Enable Keychain Item Debugging",
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,196 @@
+{
+    "title": "com.google.chrome.legacybrowsersupport",
+    "description": "Google Chrome Legacy Browser Support",
+    "__preferencedomain": "com.google.Chrome",
+    "properties": {
+        "AlternativeBrowserParameters": {
+            "title": "Command-line parameters for the alternative browser",
+            "description": "This policy controls command-line parameters to launch to the alternative browser. When this policy is left unset, only the URL is passed as a command-line parameters. https://cloud.google.com/docs/chrome-enterprise/policies/?policy=AlternativeBrowserParameters",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=AlternativeBrowserParameters"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "AlternativeBrowserPath": {
+            "title": "Alternative browser to launch for configured websites",
+            "description": "This policy controls which command to use to open URLs in an alternative browser. When this policy is left unset, a platform-specific default is used: Internet Explorer for Windows, or Safari for macOS",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=AlternativeBrowserPath"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "BrowserSwitcherDelay": {
+            "title": "Delay before launching alternative browser (milliseconds)",
+            "description": "This policy controls how long to wait before launching an alternative browser, in milliseconds",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserSwitcherDelay"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "BrowserSwitcherEnabled": {
+            "title": "Enable the Legacy Browser Support feature",
+            "description": "This policy controls whether to enable Legacy Browser Support. When this policy is left unset, or is set to false, Chrome will not attempt to launch designated URLs in an alternate browser",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserSwitcherEnabled"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "BrowserSwitcherExternalGreylistUrl": {
+            "title": "URL of an XML file that contains URLs that should never trigger a browser switch",
+            "description": "This policy is a URL, that points to an XML file in the same format as Internet Explorer's SiteList policy. This loads rules from an XML file, without sharing those rules with Internet Explorer. https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserSwitcherExternalGreylistUrl"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "BrowserSwitcherExternalSitelistUrl": {
+            "title": "URL of an XML file that contains URLs to load in an alternative browser",
+            "description": "This policy is a URL, that points to an XML file in the same format as Internet Explorer's SiteList policy. This loads rules from an XML file, without sharing those rules with Internet Explorer. https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserSwitcherExternalSitelistUrl"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "BrowserSwitcherKeepLastChromeTab": {
+            "title": "Keep last tab open in Chrome",
+            "description": "This policy controls whether to close Chrome completely when the last tab would switch to another browser. When this policy is left unset, or is set to true, Chrome will keep at least one tab open, after switching to an alternate browser",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserSwitcherKeepLastChromeTab"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "BrowserSwitcherUrlGreylist": {
+            "title": "Websites that should never trigger a browser switch",
+            "description": "This policy controls the list of websites that will never cause a browser switch. Note that elements can also be added to this list through the BrowserSwitcherExternalGreylistUrl policy",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserSwitcherUrlGreylist"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "BrowserSwitcherUrlList": {
+            "title": "Websites to open in alternative browser",
+            "description": "This policy controls the list of websites to open in an alternative browser. Note that elements can also be added to this list through the BrowserSwitcherUseIeSitelist and BrowserSwitcherExternalSitelistUrl policies",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=BrowserSwitcherUrlList"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

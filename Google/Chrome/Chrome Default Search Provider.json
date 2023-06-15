@@ -1,0 +1,273 @@
+{
+    "title": "com.google.chrome.searchprovider",
+    "description": "Google Chrome Search Provider Preferences",
+    "__preferencedomain": "com.google.Chrome",
+    "properties": {
+        "DefaultSearchProviderAlternateURLs": {
+            "title": "List of alternate URLs for the default search provider",
+            "description": "Specifies a list of alternate URLs that can be used to extract search terms from the search engine. The URLs should contain the string '{searchTerms}', which will be used to extract the search terms",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderAlternateURLs"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "DefaultSearchProviderEnabled": {
+            "title": "Enable the default search provider",
+            "description": "Enables the use of a default search provider. If you enable this setting, a default search is performed when the user types text in the omnibox that is not a URL",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderEnabled"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DefaultSearchProviderEncodings": {
+            "title": "Default search provider encodings",
+            "description": "Specifies the character encodings supported by the search provider. Encodings are code page names like UTF-8, GB2312, and ISO-8859-1. They are tried in the order provided",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderEncodings"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "DefaultSearchProviderIconURL": {
+            "title": "Default search provider icon",
+            "description": "Specifies the favorite icon URL of the default search provider",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderIconURL"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderImageURL": {
+            "title": "Parameter providing search-by-image feature for the default search provider",
+            "description": "Specifies the URL of the search engine used to provide image search",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderImageURL"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderImageURLPostParams": {
+            "title": "Parameters for image URL which uses POST",
+            "description": "Specifies the parameters used when doing image search with POST. It consists of comma-separated name/value pairs. If a value is a template parameter, like {imageThumbnail} in above example, it will be replaced with real image thumbnail data",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderImageURLPostParams"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderKeyword": {
+            "title": "Default search provider keyword",
+            "description": "Specifies the keyword, which is the shortcut used in the omnibox to trigger the search for this provider",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderKeyword"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderName": {
+            "title": "Default search provider name",
+            "description": "Specifies the name of the default search provider",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderName"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderNewTabURL": {
+            "title": "Default search provider new tab page URL",
+            "description": "Specifies the URL that a search engine uses to provide a new tab page",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderNewTabURL"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderSearchURL": {
+            "title": "Default search provider search URL",
+            "description": "Specifies the URL of the search engine used when doing a default search. The URL should contain the string '{searchTerms}', which will be replaced at query time by the terms the user is searching for",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderSearchURL"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderSearchURLPostParams": {
+            "title": "Parameters for search URL which uses POST",
+            "description": "Specifies the parameters used when searching a URL with POST. It consists of comma-separated name/value pairs",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderSearchURLPostParams"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderSuggestURL": {
+            "title": "Default search provider suggest URL",
+            "description": "Specifies the URL of the search engine used to provide search suggestions. The URL should contain the string '{searchTerms}', which will be replaced at query time by the text the user has entered so far",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderSuggestURL"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSearchProviderSuggestURLPostParams": {
+            "title": "Parameters for suggest URL which uses POST",
+            "description": "Specifies the parameters used when doing suggestion search with POST. It consists of comma-separated name/value pairs",
+            "links": [
+                {
+                    "rel": "Documentation Link",
+                    "href": "https://cloud.google.com/docs/chrome-enterprise/policies/?policy=DefaultSearchProviderSuggestURLPostParams"
+                }
+            ],
+            "anyOf": [
+                {
+                    "type": "null",
+                    "title": "Not Configured"
+                },
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        }
+    }
+}
